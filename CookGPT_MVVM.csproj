@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>applicationIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="applicationIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.16" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="Notification.Wpf" Version="6.0.0" />
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\1icon.png" />
+    <None Remove="Assets\2icon.png" />
+    <None Remove="Assets\3icon.png" />
+    <None Remove="Assets\applicationIcon-256.png" />
+    <None Remove="Assets\loadingicon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\1icon.png" />
+    <Resource Include="Assets\2icon.png" />
+    <Resource Include="Assets\3icon.png" />
+    <Resource Include="Assets\applicationIcon-256.png" />
+    <Resource Include="Assets\loadingicon.png" />
+  </ItemGroup>
+
+</Project>
